@@ -336,6 +336,11 @@ function checkAnswers(event) {
                 wrongAnswersCount++;
             }
         } 
+        
+        const radioButtons = questionContainer.querySelectorAll(`input[type="radio"][name="question-${index + 1}"]`);
+            radioButtons.forEach(radio => {
+                radio.disabled = true;
+            });
     });
 
     document.getElementById('correct-answers').textContent = correctAnswersCount;
