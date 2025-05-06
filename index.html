@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Quiz Dinâmico</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>Quiz</h1>
+        <form id="quiz-form">
+            <div class="question-container" id="question-1">
+                <p class="question-text">Pergunta 1 aqui?</p>
+                <div class="options-container">
+                    <label>
+                        <input type="radio" name="question-1" value="a"> Opção A
+                    </label>
+                    <label>
+                        <input type="radio" name="question-1" value="b"> Opção B
+                    </label>
+                    <label>
+                        <input type="radio" name="question-1" value="c"> Opção C
+                    </label>
+                    <label>
+                        <input type="radio" name="question-1" value="d"> Opção D
+                    </label>
+                </div>
+            </div>
+
+            <div class="question-container" id="question-2">
+                <p class="question-text">Pergunta 2 aqui?</p>
+                <div class="options-container">
+                    <label>
+                        <input type="radio" name="question-2" value="a"> Opção A
+                    </label>
+                    <label>
+                        <input type="radio" name="question-2" value="b"> Opção B
+                    </label>
+                    <label>
+                        <input type="radio" name="question-2" value="c"> Opção C
+                    </label>
+                    <label>
+                        <input type="radio" name="question-2" value="d"> Opção D
+                    </label>
+                </div>
+            </div>
+
+            <button type="submit">Enviar Respostas</button>
+        </form>
+        <div id="result-container" class="hidden">
+            <h2>Resultado</h2>
+            <p>Acertos: <span id="correct-answers">0</span></p>
+            <p>Erros: <span id="wrong-answers">0</span></p>
+        </div>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
