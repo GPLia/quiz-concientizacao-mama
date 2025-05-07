@@ -47,6 +47,22 @@ h1 {
     margin-right: 8px;
 }
 
+.correto {
+    background-color: 	#9ACD32;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+.incorreto {
+    background-color: #fe495f;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+.incorreto-correto {
+    background-color: #87CEEB;
+    color: #fff !important;
+    font-weight: bold !important;
+}
+
 button[type="submit"] {
     background-color: #555;
     color: #fff;
@@ -102,7 +118,7 @@ button[type="submit"]:hover {
     .question-container {
         margin-bottom: 15px;
         padding: 12px;
-        font: bold;
+        font-weight: bold;
         font-size: 18px;
     }
 
@@ -167,7 +183,7 @@ button[type="submit"]:hover {
     .question-container {
         margin-bottom: 15px;
         padding: 12px;
-        font: bold;
+        font-weight: bold;
         font-size: 12px;
     }
 

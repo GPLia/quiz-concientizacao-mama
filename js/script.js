@@ -329,11 +329,19 @@ function checkAnswers(event) {
             userAnswers.push(userAnswer);
 
             const correctAnswer = questions.find(q => q.question === questionContainer.querySelector('.question-text').textContent).correctAnswer;
-
+            
             if (userAnswer === correctAnswer) {
                 correctAnswersCount++;
+                selectedOption.parentNode.classList.add('correto');
             } else {
                 wrongAnswersCount++;
+                selectedOption.parentNode.classList.add('incorreto');
+
+                const correctOptionInput = questionContainer.querySelector(`input[value="${correctAnswer}"]`);
+                if(correctOptionInput) {
+                    const correctOptionLabel = correctOptionInput.parentNode;
+                    correctOptionLabel.classList.add('incorreto-correto');
+                }
             }
         } 
         
